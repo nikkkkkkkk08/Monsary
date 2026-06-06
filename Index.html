@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For My Lablabbb ❤️</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="hearts-container" id="hearts-container"></div>
+
+    <div class="container">
+        <!-- Step 1: Date Lock -->
+        <div id="date-lock" class="card glass">
+            <h1>Hey Babby... ❤️</h1>
+            <p>To see your surprise, when did it all start?</p>
+            <div class="input-group">
+                <input type="text" id="date-input" placeholder="e.g. May 12" autocomplete="off">
+                <button onclick="checkDate( )" class="reasons-btn">Unlock</button>
+            </div>
+            <p id="error-msg" class="hidden" style="color: #ff4d6d; font-size: 0.9rem; margin-top: 10px;">Oops! Wrong date, try again Lablabbb 🥺</p>
+        </div>
+
+        <!-- Step 2: Envelope (Hidden until unlocked) -->
+        <div id="opening" class="hidden">
+            <h1 class="glow-text">You got it right! ❤️</h1>
+            <div class="envelope-wrapper" onclick="openLetter()">
+                <div class="envelope">
+                    <div class="heart-seal">❤️</div>
+                </div>
+            </div>
+            <p class="instruction-text">Click to open your letter</p>
+        </div>
+
+        <!-- Step 3: Main Content (Hidden until opened) -->
+        <div id="main-content" class="hidden">
+            
+            <!-- Timer Card -->
+            <div class="card glass">
+                <h2>Our Journey So Far:</h2>
+                <div class="timer-container" id="timer">
+                    <div class="timer-box"><span class="timer-num" id="days">00</span><span class="timer-label">Days</span></div>
+                    <div class="timer-box"><span class="timer-num" id="hours">00</span><span class="timer-label">Hours</span></div>
+                    <div class="timer-box"><span class="timer-num" id="mins">00</span><span class="timer-label">Mins</span></div>
+                    <div class="timer-box"><span class="timer-num" id="secs">00</span><span class="timer-label">Secs</span></div>
+                </div>
+                <p>...and I'm still falling for you every day. ❤️</p>
+            </div>
+
+            <!-- Reasons Button -->
+            <div class="card glass">
+                <h2>A Little Something...</h2>
+                <button class="reasons-btn" onclick="showReason()">Click for a reason I love you!</button>
+                <div id="reason-display"></div>
+            </div>
+
+            <!-- The Letter Card -->
+            <div class="card glass">
+                <h1 class="letter-title">Happy 1st Monthsary!</h1>
+                <div class="letter-content">
+To my Lablabbb
+
+Happy 1st Monthsary Babbyyy ❤️
+
+It's funny how everything started. We met because of a chess live, then a group chat, then a few jokes, and somehow you became one of the most important people in my life.
+
+I still remember how we used to tease each other, send notes and joke around. Back then I never thought those little moments would become my favorite memories. Now talking to you is one of the best parts of my day.
+
+Thank you for always caring about me. Thank you for reminding me to eat, sleep and take care of myself. Even when you get angry because I'm still awake at 2 AM, I know it's because you care 😭❤️
+
+I also want to thank you for being patient with me, especially when I keep ragebaiting you and asking for lambing. Thank you for staying even when I'm annoying, clingy and a little too much sometimes.
+
+You know what's funny? Because of you I started watching anime. Because of you, I learned to enjoy things I never thought I would enjoy before. That's how much you've become a part of my life.
+
+One of my favorite things about us is how we always care for each other. We worry when the other doesn't eat, when the other gets sick, or when something feels wrong. Even though we're far apart you always make me feel loved.
+
+Thank you for every "babby", every laugh, every kiss in chat, every late night conversation and every moment that made me smile.
+
+We've only been together for one month but you've already given me so many memories I'll never forget.
+
+I don't know what the future holds but I do know one thing: I'm grateful that I met you and I'm grateful that you're mine.
+
+Happy 1st Month Lablabbb ❤️
+
+I LOVE YOU ALWAYS BABBBYYY
+                </div>
+                <div class="signature">Forever Yours ❤️</div>
+                
+                <div class="music-player">
+                    <iframe id="spotify-player" style="border-radius:12px" src="https://open.spotify.com/embed/track/4YsnwsPURRSvprBHBY1BCd?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
